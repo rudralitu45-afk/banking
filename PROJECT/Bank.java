@@ -16,7 +16,7 @@ class BankAccount {
     void withdraw(double amount) throws InsufficientBalanceException {
         if (amount > balance) {
             // custom exception manually throw kar rahe hain
-            throw new InsufficientBalanceException("Balance kam hai! Withdraw nahi ho sakta.");
+            throw new InsufficientBalanceException("Balance kam hai! Withdraw nahi ho sakta bsdk.");
         } else {
             balance -= amount;
             System.out.println("Withdraw successful! Remaining balance: " + balance);
